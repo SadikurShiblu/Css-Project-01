@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* nav bar content */
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li{
+    margin: 0 30px;
+}
+
+
+.active:hover{
+    color: #fc036b;
+}
+
+
+
+
+
+
+
+
+/* header content section */
+
+
+header{
+    width: 100%;
+    height:550px;
+    background-image: url(image/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color:white;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background:#fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 10px;
+    margin-bottom:30px;
+
+}
+
+.btn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+
+.menubtn{
+    position: absolute;
+    top:25px;
+    right: 30px;
+}
+
+.navbar img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+/* events start from here */
+.Events{
+    width: 80%;
+    margin:80px auto;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#49497e;
+}
+
+
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top:30px;
+
+}
+
+.col img{
+    width:80%;
+    height:200px;
+} 
+
+.col{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Events.row{
+    margin-top:50px;
+}
+
+h4{
+    font-size:3vmin;
+    color:black;
+    margin: 20px auto;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0 30px;
+
+}
+
+.Events .btn{
+    margin-top: 20px;
+}
+
+
+/* Explore start from here */
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/rosan-harmens-PNKEmkgdNHo-unsplash.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.explore-content{
+    width:60%;
+    color: whitesmoke;
+    padding:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+.explore-content h1{
+font-size: 7vmin;
+ margin-right: 170px;
+}
+
+.explore-content p{
+ color:#ddd;
+
+}
+
+.explore-content .btn{
+    margin-top: 30px;
+    margin-right:160px;
+}
+
+
+.ex-cntn p{
+    
+    color:rgb(100, 84, 84)(46, 38, 38);
+    margin-right:80px;
+
+}
+
+.line1{
+    width: 150px;
+    height: 4px;
+    background:#fc036b;
+    margin:5px auto;
+    border-radius: 5px;
+    margin-left:200px;
+}
+
+
+/* Tours section start from here */
+
+
+.content-col{
+    width:400px;
+}
+
+.image-col{
+    width:600px;
+}
+
+
+
+.tours.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery img{
+    width:250px;
+    margin: 10px;
+}
+
+.row1{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin-top:30px;
+
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-col{
+    float:right;
+    margin-top:-250px;
+
+}
+
+.content-col{
+    
+    margin-left: 50px;
+    margin-top: 150px;
+    font-size:20px;
+}
+
+#clear-div{
+    clear: both;
+    content:('');
+}
+
+
+
+.footer{
+    background: #484872;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+
+img{
+    transition: trasfrom .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.btn:hover{
+    background: whitesmoke;
+    color:black;
+}
+
+
+
+
+/* Mobile device responsive */
+@media only screen and (max-width:850px){
+
+.navbar{
+padding: 0;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.navlinks{
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    justify-content:center;
+    background: #484872;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+}
+.navlinks li{
+    margin: 30px auto;
+}
+
+
+.mobile-menu{
+    margin-top: 0;
+    border-bottom-right-radius: 30%;
+}
+
+
+.row{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top:30px;
+
+}
+
+.col{
+    margin-top: 20px;
+}
+
+.explore-content{
+    width: 100%;
+}
+.explore-content h1{
+    width: 100%;
+    font-size:30px;
+    margin-right:-50px;
+}
+
+.line1{
+    margin-right:280px;
+}
+
+.ex-cntn p{
+    color:white;
+    margin-top:10px;
+}
+
+
+
+.image-col{
+    float:none;
+    margin-top:80px;
+
+}
+
+.image-col{
+    width: 100%;
+}
+
+.footer p{
+    color: whitesmoke;
+    margin: 5px auto;
+    padding: 20px auto;
+    font-size: 12px;
+    
+    
+}
+
+
+
+
+}
+
+@media only screen and (min-width:992px){
+    .navbar img{
+        margin-top: -992px;
+    }
+}
+
+
+
